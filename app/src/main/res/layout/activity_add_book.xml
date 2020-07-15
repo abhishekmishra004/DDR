@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_book">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2FFD6"
+        app:title="Add Note"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Title"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:id="@+id/editbooktxttitle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Author"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:id="@+id/editbooktxtauthor"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Version"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:id="@+id/editbooktxtversion"/>
+
+        <Spinner
+            android:id="@+id/bookspinnerSemester"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:id="@+id/bookspinnerSubject"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <EditText
+            android:id="@+id/editbooktxtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_margin="10dp"
+            android:hint="Description"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pdf Name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/txtbookpdfname"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse PDF"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:id="@+id/book_browse_button"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/booksubmit_button"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

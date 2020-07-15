@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_user_uploads"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="View Data"
+        android:background="#E2FFD6"
+        android:id="@+id/toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="View notes"
+            android:id="@+id/viewnote"
+            android:background="#CFF1CD"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="View Project"
+            android:id="@+id/viewproject"
+            android:layout_weight="1"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="View Books"
+            android:id="@+id/viewbook"
+            android:background="#CFF1CD"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="View Resource"
+            android:id="@+id/viewresource"
+            android:layout_weight="1"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="View Assignment"
+            android:id="@+id/viewassignment"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

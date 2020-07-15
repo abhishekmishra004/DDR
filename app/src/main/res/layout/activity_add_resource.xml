@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_resource"
+    android:background="@drawable/background">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2FFD6"
+        app:title="Add Data"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp">
+
+        <Spinner
+            android:id="@+id/resSpinnerSemester"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:id="@+id/resSpinnerSubject"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Title"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:id="@+id/resedittxttitle"/>
+
+        <EditText
+            android:id="@+id/resedittxtfeature"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_margin="10dp"
+            android:hint="Features"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/resedittxtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_margin="10dp"
+            android:hint="Description"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pdf Name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/restxtpdfname"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse PDF"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:id="@+id/resbrowse_button"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/ressubmit_button"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

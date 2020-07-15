@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/cet_logo" />
+
+        <EditText
+            android:id="@+id/editxtuserid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="UserId"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edittxtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#CFFDC4"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtnewuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="New User? Signup HERE"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

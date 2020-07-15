@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Single_book">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/viewtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2FFD6"
+        app:title="View Data"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewtoolbar"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title :"
+            android:id="@+id/tempttitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Temp Title"
+            android:layout_toRightOf="@+id/tempttitle"
+            android:id="@+id/viewbooktxttitle"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject :"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tempttitle"
+            android:id="@+id/tempsubject"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Temp Subject"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tempsubject"
+            android:layout_below="@+id/tempttitle"
+            android:id="@+id/viewbooktxtsub"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:layout_toEndOf="@+id/tempsubject" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp Semester"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/viewbooktxtsub"
+            android:layout_toRightOf="@+id/txts"
+            android:id="@+id/viewbooktxtsem"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester :"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/viewbooktxtsub"
+            android:id="@+id/txts"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp Author"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txts"
+            android:layout_toRightOf="@+id/txtstype"
+            android:id="@+id/viewbooktxtauthor"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author :"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txts"
+            android:id="@+id/txtstype"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:id="@+id/tempdesc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_below="@+id/txtstype"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tempdesc"
+            android:id="@+id/viewbooktxtdesc"
+            android:text="Description"
+            android:textColor="#000"
+            android:textStyle="italic"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Pdf"
+            android:id="@+id/viewbookbuttondownload"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/viewbooktxtpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="Pdf Name"
+            android:layout_above="@+id/viewbookbuttondownload"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"/>
+    </RelativeLayout>
+</RelativeLayout>

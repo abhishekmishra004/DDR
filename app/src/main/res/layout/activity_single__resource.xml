@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Single_Resource"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/viewtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2FFD6"
+        app:title="View Data"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#D9FCCA">
+
+        <TextView
+            android:id="@+id/tempttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Title :"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resviewtxttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tempttitle"
+            android:text=" Temp Title"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tempsubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempttitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Subject :"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/resviewtxtsubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempttitle"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/tempsubject"
+            android:layout_toRightOf="@+id/tempsubject"
+            android:text=" Temp Subject"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/resviewtxtsem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resviewtxtsubject"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/txts"
+            android:text="Temp Semester"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resviewtxtsubject"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Semester :"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tempdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txts"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Description: "
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/resviewtxtdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempdesc"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Features :"
+            android:id="@+id/temp"
+            android:layout_below="@+id/resviewtxtdesc"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Features"
+            android:id="@+id/resviewfeaturess"
+            android:layout_below="@+id/temp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Pdf"
+            android:id="@+id/resbuttondownload"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/resviewtxtpdfname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="Pdf Name"
+            android:layout_above="@+id/resbuttondownload"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+</LinearLayout>

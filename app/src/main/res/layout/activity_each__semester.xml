@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Each_Semester"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2FFD6"
+        app:title="Choose Semester"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="First Semester"
+            android:id="@+id/firstsem"
+            android:background="#CFF1CD"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Second Semester"
+            android:id="@+id/secondsem"
+            android:layout_weight="1"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Third Semester"
+            android:id="@+id/thirdsem"
+            android:background="#CFF1CD"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Fourth Semester"
+            android:id="@+id/fourthsem"
+            android:layout_weight="1"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Fifth Semester"
+            android:layout_weight="1"
+            android:id="@+id/fifthsem"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:text="Sixth Semester"
+            android:id="@+id/sixsem"
+            android:background="#CFF1CD"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
